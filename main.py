@@ -1,5 +1,4 @@
 import os
-import openai
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 import streamlit as st
@@ -85,4 +84,5 @@ if st.button("Translate"):
             result = prakrit_to_english(prakrit_word)
             st.success("Translation Found")
             st.markdown(result)
+
 
