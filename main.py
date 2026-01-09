@@ -1,8 +1,4 @@
-import configparser
-import os
-import openai
-from langchain_community.vectorstores import Chroma
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+
 import configparser
 import os
 import openai
@@ -14,7 +10,7 @@ config_path = "config.ini"
 # ---------- READ CONFIG ----------
 config = configparser.ConfigParser(interpolation=None)
 config.read(config_path)
-
+##print
 # ---------- EXTRACT KEY ----------
 key = config.get("API_KEY", "OPENAI_KEY")
 
