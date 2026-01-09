@@ -1,8 +1,6 @@
 langchain
-chromadb
-langchain-community
-langchain-openai
-pypdf
+
+
 
 
 
