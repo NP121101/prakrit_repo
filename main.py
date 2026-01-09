@@ -28,7 +28,7 @@ gpt_5_2 = ChatOpenAI(
     temperature=0,
     openai_api_key=key
 )
- OpenAIEmbeddings, ChatOpenAI
+
 
 
 
@@ -80,6 +80,7 @@ if st.button("Translate"):
             result = prakrit_to_english(prakrit_word)
             st.success("Translation Found")
             st.markdown(result)
+
 
 
 
