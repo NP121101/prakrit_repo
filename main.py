@@ -1,22 +1,11 @@
-
-import configparser
 import os
 import openai
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+import streamlit as st
 
-config_path = "config.ini"
+key =st.secrets["OPENAI_KEY"]
 
-# ---------- READ CONFIG ----------
-config = configparser.ConfigParser(interpolation=None)
-config.read(config_path)
-##print
-# ---------- EXTRACT KEY ----------
-key = config.get("API_KEY", "OPENAI_KEY")
-
-# ---------- SET ENV + OPENAI ----------
-os.environ["OPENAI_API_KEY"] = key
-openai.api_key = key
 
 # ---- CONFIG ----
 PERSIST_DIR = "prakrit_embedding"
