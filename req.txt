@@ -1,6 +1,6 @@
 langchain
 pypdf
-langchain_openai
-langchain_core
+langchain-openai
+langchain-core
 chromadb
 openai
