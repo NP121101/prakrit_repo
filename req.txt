@@ -3,5 +3,6 @@ pypdf
 langchain-openai
 langchain-core
 chromadb
-langchain_community
+langchain-community
+
 
