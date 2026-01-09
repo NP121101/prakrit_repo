@@ -28,11 +28,7 @@ gpt_5_2 = ChatOpenAI(
     temperature=0,
     openai_api_key=key
 )
-
-import os
-import streamlit as st
-from langchain_community.vectorstores import Chroma
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+ OpenAIEmbeddings, ChatOpenAI
 
 
 
@@ -84,5 +80,6 @@ if st.button("Translate"):
             result = prakrit_to_english(prakrit_word)
             st.success("Translation Found")
             st.markdown(result)
+
 
 
